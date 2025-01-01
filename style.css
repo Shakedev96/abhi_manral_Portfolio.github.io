@@ -626,49 +626,37 @@ i {
     border: 2px solid #fff;
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
-    overflow-y: auto;
     cursor: pointer;
-    padding: 40px; /* Add padding for better spacing inside */
+    padding: 40px; 
     gap: 10px;
-    scrollbar-width: thin;
+    
 }
 
-.project-box::-webkit-scrollbar{
-    width: 5px;
-}
-
-.project-box::-webkit-scrollbar-thumb{
-    background-color: #aaa;
-    border-radius: 10px;
-}
-
-.project-box::-webkit-scrollbar-track{
-    background: transparent;
-}
 
 .prototype-content{
     display: flex;
     justify-content: flex-start;
     flex-direction: column; 
     align-items: center; 
-    overflow-y: auto; 
+    
 }
 
 .project-image {
-    width: 100%; /* Image takes up 40% of the container width */
+    width: 100%; 
     height: auto;
     border-radius: 10px;
     margin-top: 10px;
-    margin-bottom: 10px; /* Add space between the image and description */
+    margin-bottom: 10px; 
 }
 
 .prototype-description {
-    width: 60%; /* Description takes up the remaining 60% */
+    width: 60%; 
     font-size: 14px;
     text-align: center;
     color: var(--text-color);
     line-height: 1.5;
-    overflow-y: auto; /* Enable scrolling if the description is long */
+    overflow-y: auto; 
+    scrollbar-width: thin;
 }
 .prototype-description{
     margin: 0;
