@@ -392,11 +392,12 @@ i {
     align-items: center;
     flex-direction: column;
     padding-block: 45px 45px;
-    padding-inline: 35px;
+    padding-inline: 10px;
     border: 2px solid #fff;
     background: transparent;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
     border-radius: 20px;
+    margin-bottom: 30px; /* Added spacing between About Me and Skill Box */
 }
 .about-me {
     width: 100%;
@@ -405,7 +406,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
 }
 
@@ -419,7 +420,7 @@ i {
 .about-info figcaption{
     width: 100%;
     height: fit-content;
-    padding: 10%;
+    padding: 5px;
     position: relative;
 }
 
@@ -439,17 +440,21 @@ i {
 .about-me h2{
     color: var(--text-color);
     font-size: 2rem;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    position: center;
     width: 100%;
     text-align: center;
+    top: 20px;
+    left: 40px;
 }
 
 .about-me p {
-    margin-top: 10px;
+    margin-top: 60px;
     color: var(--text-color);
     font-size: 1.2rem;
-    line-height: 1.5;
-    width: 100%;
+    line-height: 1.6;
+    width: fit-content;
     text-align: center;
 }
 
@@ -473,7 +478,7 @@ i {
 
 .skill{
     position: relative;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     background: transparent;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
@@ -603,6 +608,9 @@ i {
     gap: 10px;
     
 }
+.project-box h3{
+    color: var(--text-color);
+}
 
 
 .prototype-content{
@@ -620,10 +628,17 @@ i {
     margin-top: 10px;
     margin-bottom: 10px; 
 }
+.project-video {
+    width: 100%; /* Adjust width */
+    max-width: auto; /* Limit max size */
+    border-radius: 10px; /* Optional rounded corners */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .prototype-description {
-    width: 80%; 
-    font-size: 16px;
+    width: 90%; 
+    font-size: 17px;
     text-align: center;
     color: var(--text-color);
     line-height: 1.5;
@@ -641,7 +656,7 @@ i {
 
 .prototype-description p {
     margin: 10px 0; /* Adds vertical spacing between paragraphs */
-    line-height: 1.6; /* Improves readability by increasing line spacing */
+    line-height: 2; /* Improves readability by increasing line spacing */
     text-align: justify; /* Makes paragraphs look clean and aligned */
 }
 
@@ -667,7 +682,7 @@ i {
 .project-box:hover.project-box i,
 .project-box:hover.project-box > h3,
 .project-box:hover.project-box > label{
-    color:rgba(255, 255, 255, 0.622);
+    color:rgba(255, 0, 0, 0.759);
     z-index: 2;
     
 
