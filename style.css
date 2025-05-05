@@ -302,15 +302,17 @@ i {
 
 }   
 
-.icon_circle{
+.icon_circle {
     position: absolute;
-    transform: transform(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
     border-radius: 50px;
     animation: iconSlide 4s infinite alternate;
-
+    pointer-events: none; /* prevents blocking clicks */
+    z-index: 0; /* stays behind clickable icons */
 }
+
 
 
 .social-icons:hover .icon_circle{
@@ -597,7 +599,7 @@ i {
     flex-direction: column;
     justify-content: flex-start; /* Align content at the top */
     align-items: center;
-    width: 60%; /* Increased width for a rectangular shape */
+    width: 80%; /* Increased width for a rectangular shape */
     height: auto; /* Increased height to make it taller */
     background: transparent;
     border: 2px solid #fff;
